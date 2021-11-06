@@ -24,7 +24,6 @@ public:
     float Eval();
     void addToStack(string input);
     void reverseStack();
-    void checkElements();
 
 private:
     GenStack<float> *rpnStack;

@@ -86,7 +86,6 @@ int RPNCalc::isNum(char c){
     }
     return -1;
 }
-
 //Operation exucutes the math equation
 float RPNCalc::operation(int temp1, int temp2, char opp){
     if(opp=='+'){
