@@ -18,22 +18,7 @@ RPNCalc::~RPNCalc()
     //default destructor
 }
 
-//Operation exucutes the math equation
-float RPNCalc::operation(int temp1, int temp2, char opp){
-    if(opp=='+'){
-        return temp2+temp1;
-    }
-    else if(opp=='-'){
-        return temp2-temp1;
-    }
-    else if(opp == '*'){
-        return temp2*temp1;
-    }
-    else if(opp == '/'){
-        return temp2/temp1;
-    }
-}
-//finalEval takes in the formulafrom the user and outputs the answer
+//Eval takes in the formulafrom the user and outputs the answer
 float RPNCalc::Eval(){
     string final;
     cout << "Enter calculation in RPM" <<endl;
@@ -100,4 +85,20 @@ int RPNCalc::isNum(char c){
         return 1;
     }
     return -1;
+}
+
+//Operation exucutes the math equation
+float RPNCalc::operation(int temp1, int temp2, char opp){
+    if(opp=='+'){
+        return temp2+temp1;
+    }
+    else if(opp=='-'){
+        return temp2-temp1;
+    }
+    else if(opp == '*'){
+        return temp2*temp1;
+    }
+    else if(opp == '/'){
+        return temp2/temp1;
+    }
 }
